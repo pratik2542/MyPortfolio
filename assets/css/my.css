@@ -1,16 +1,5 @@
 @charset "UTF-8";
-/*!
-=========================================================
-* Meyawo Landing page
-=========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+/*
 */
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 :root {
@@ -11167,10 +11156,13 @@ p {
   transition: all, 0.3s;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (max-width: 767px) {
   .service-card .body .subtitle {
     -webkit-transition: none;
     transition: none;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: center;
   }
 }
 
@@ -12133,3 +12125,27 @@ pre .code {
   padding: 100px 0 !important;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .col-md-6 {
+    width: 100%;
+  }
+}
